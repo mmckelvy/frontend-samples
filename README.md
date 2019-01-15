@@ -47,3 +47,9 @@ Again, each of these components can be used on their own or as part of a larger 
     </Form>
 
 ## Views
+I've included the "Bank" view from the Book & Ledger application.  This view is a "tree": it contains child views which in turn contain child views.  This structure mimics the user's journey through the app: start on the main "Bank" page -> go to the bank feed -> view transactions in the bank feed's table.  I find this way of structuring views to be a helpful organizing mechanism, especially for larger applications.
+
+The parent view fetches data and manages state that must be shared across the child views.  Each child view in turn manages local state and communicates to the parent where necessary with callbacks.
+
+## Utils
+There are two utility functions included.  The first, `parse-csv.js` parses a csv string into a specific JSON format.  The second, `replace-with-balance.js`, replaces particular string patterns/values with data from an array.  Both functions include accompanying tests.
