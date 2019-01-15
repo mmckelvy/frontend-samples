@@ -11,7 +11,7 @@ This is a "render props" component that handles basic form / input functionality
 This is a custom input that pretties up the standard `input` element and adds custom functionality such as tooltips, multi-lines, error messages, and focusing.
 
 ### AutoSuggestInput
-This component wraps a the aforementioned Input with autocomplete functionality.  It shows a dropdown list of potential options based on the user's input.  It accommodates both mouse and keyboard navigation.
+This component wraps the aforementioned Input with autocomplete functionality.  It shows a dropdown list of potential options based on the user's input.  It accommodates both mouse and keyboard navigation.
 
 ### Button
 This component pretties up the standard `button` element with several colors that indicate button type (e.g. primary, secondary, danger, disabled, etc.).
@@ -33,7 +33,7 @@ Again, each of these components can be used on their own or as part of a larger 
         <AutoSuggestInput
           suggestions={listOfSuggestedValues}
           name="bar"
-          value={values.displayName}
+          value={values.bar}
           onChange={handleChange}
           errorMsg={errors.bar}
         />
@@ -47,7 +47,7 @@ Again, each of these components can be used on their own or as part of a larger 
     </Form>
 
 ## Views
-I've included the "Bank" view from the Book & Ledger application.  This view is a "tree": it contains child views which in turn contain child views.  This structure mimics the user's journey through the app: start on the main "Bank" page -> go to the bank feed -> view transactions in the bank feed's table.  I find this way of structuring views to be a helpful organizing mechanism, especially for larger applications.
+I've included the "Bank" view from the Book & Ledger application I built.  This view is a "tree": it contains child views which in turn contain child views.  This structure mimics the user's journey through the app: start on the main "Bank" page -> go to the bank feed -> view transactions in the bank feed's table.  I find this way of structuring views to be a helpful organizing mechanism, especially for larger applications.
 
 The parent view fetches data and manages state that must be shared across the child views.  Each child view in turn manages local state and communicates to the parent where necessary with callbacks.
 
