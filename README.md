@@ -16,6 +16,7 @@ This component wraps the aforementioned Input with autocomplete functionality.  
 ### Button
 This component pretties up the standard `button` element with several colors that indicate button type (e.g. primary, secondary, danger, disabled, etc.).
 
+### Example
 Again, each of these components can be used on their own or as part of a larger component or view.  Here is an example of them all working together:
 
     <Form
